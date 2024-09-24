@@ -23,17 +23,9 @@ body {
 }
 
 /* Layout */
-.parent {
-  display: flex;
-  height: 100vh;
-}
-.section {
-  flex: 1;
-  padding: 20px;
-}
-.left-side {
-  width: 20%;
-}
-.right-side {
-  width: 20%;
+
+
+.ex3 .parent {
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
 }
