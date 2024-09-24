@@ -1,12 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <link rel="stylesheet" href="styles/base.css">
-  <meta charset="utf-8">
+  <meta charset="utf-8"> <!-- Meta charset tag corrected -->
   <meta name="author" content="Desmond Chibanda">
   <meta name="description" content="An introduction landing page about my journey learning WDD 131 - Dynamic Web Fundamentals as a Web Developer Student from BYU-I">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>WDD 131 - Dynamic Web Fundamentals - Desmond Chibanda</title>  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Dynamic Web Fundamentals - Desmond Chibanda</title>
+  <link rel="stylesheet" href="styles/base.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,47 +15,58 @@
 
 <body>
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - Desmond Chibanda</h1>
-          <nav>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Desmond Chibanda</span></h1>
+        <nav>
+            <div class="nav-links">
             <ul>
-                <li><a href="https://byui.instructure.com/.">I-Learn</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/6?lang=eng&id=p63#p63">Scripture</a></li>
                 <li><a href="#">Final Project</a></li>
-                <li><a href="www.linkedin.com/in/desmondchibanda">Linkedin</a></li>
-            </ul>    
-          </nav>
- 
-          <main>
-            <section class="card about">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <p>My name is Desmond and I go by Linx. I was born in Zimbabwe and live with my family in Cape Town, South Africa. I am currently working as a uber driver. My family is my world and I love spending time with them. I love to travel and to discover and learn new things.</p>
-                    <img src="images/profile.jpg" alt="Desmond Chibanda">
-                </div>
-                <h3>Harare, Zimbabwe</h3>
-                <div class="location">
-                    <img src="images/zimbabwe-flag.jpg" alt="Official Flag of Zimbabwe">
-                    <p>Zimbabwe is a landlocked country in southern Africa known for its diverse landscapes and wildlife. Its capital, Harare, is a bustling city full of culture and history. Zimbabwe is home to Victoria Falls, one of the Seven Natural Wonders of the World, as well as diverse flora and fauna. It has a rich history, with ancient stone cities like Great Zimbabwe as part of its heritage.</p>
-                </div>
-            </section>
-    
-            <section class="card resources">
-                <h2>Web Dev Resources</h2>
-                <ul>
-                    <li><a href="https://dev.to">Dev.to Community</a></li>
-                    <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
-                    <li><a href="https://css-tricks.com">CSS Tricks</a></li>
-                    <li><a href="https://www.w3schools.com">W3 Schools</a></li>
-                    <li><a href="https://www.udemy.com">Udemy</a></li>
-                    <li><a href="https://www.freecodecamp.org/">Freecodecamp</a></li>
-                </ul>
-            </section>
-        </main>
-    
-        <!-- Footer Section -->
-        <footer>
-            <p>&copy;<span id="currentyear"></span>  🍀 Desmond Chibanda | WDD131 🍀  Zimbabwe</p>
-            <p>Last Modification: <span id="lastModified"></span></p>
-        </footer>
-    </body>
-    </html>
+                <li><a href="https://www.linkedin.com/in/desmondchibanda">LinkedIn</a></li>
+            </ul>
+           </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Section - moved outside of header -->
+    <main>
+        <section class="card about">
+            <div class="card-header">
+            <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <p>My name is Desmond and I go by Linx. I was born in Zimbabwe and live with my family in Cape Town, South Africa. I am currently working as a Uber driver. My family is my world, and I love spending time with them. I love to travel, and I enjoy discovering and learning new things.</p>
+                <img src="images/profile.jpg" alt="Desmond Chibanda">
+            </div>
+           <div class="name-place">
+            <h3>Harare, Zimbabwe</h3>
+           </div>
+            <div class="location">
+                <img src="images/zimbabwe-flag.jpg" alt="Official Flag of Zimbabwe">
+                <p>Zimbabwe is a landlocked country in southern Africa known for its diverse landscapes and wildlife. Its capital, Harare, is a bustling city full of culture and history. Zimbabwe is home to Victoria Falls, one of the Seven Natural Wonders of the World, as well as diverse flora and fauna. It has a rich history, with ancient stone cities like Great Zimbabwe as part of its heritage.</p>
+            </div>
+        </section>
+
+        <section class="card resources">
+            <div class="card-header">
+              <h2>Web Dev Resources</h2>
+            </div>  
+            <ul>
+                <li><a href="https://dev.to">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com">Udemy</a></li>
+                <li><a href="https://www.freecodecamp.org/">Freecodecamp</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🍀 Desmond Chibanda | WDD131 🍀 Zimbabwe</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>

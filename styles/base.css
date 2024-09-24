@@ -13,6 +13,41 @@ header {
     text-align: center;
 }
 
+.highlight {
+    color: #fdda38; /* Yellow color */
+}
+
+
+.nav-links {
+    background-color: black;
+    color: white;
+    padding: 0.1rem;
+    margin: -0.30rem;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Distribute links evenly */
+}
+
+.nav-links ul li {
+    margin: 0; /* Remove margin from list items */
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem; /* Add padding for better spacing */
+}
+
+.nav-links ul li a:hover {
+    text-decoration: underline;
+}
+
 header h1 {
     margin: 0;
     font-size: 1.8rem;
@@ -63,9 +98,17 @@ img {
     }
 }
 
+.card-header {
+    background-color: #03324A; /* Card header background color */
+    color: white; /* Card header text color */
+    padding: 0.4rem; /* Padding for the header */
+    border-top-left-radius: 8px; /* Round top corners */
+    border-top-right-radius: 8px; /* Round top corners */
+    margin: -0.9rem;
+}
 
 .card {
-    background-color: white;
+    background-color: rgb(111, 144, 163);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1rem;
@@ -95,6 +138,13 @@ img {
     margin-top: 1rem;
 }
 
+.name-place{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
 .location img {
     width: 150px;
     margin-right: 1rem;
@@ -102,7 +152,8 @@ img {
 
 .resources ul {
     padding: 0;
-    list-style: none;
+    list-style: disc;
+    margin-left: 1.5rem;
 }
 
 .resources ul li {
@@ -110,7 +161,7 @@ img {
 }
 
 .resources ul li a {
-    color: #551a8b;
+    color: darkgreen;
     text-decoration: none;
 }
 
