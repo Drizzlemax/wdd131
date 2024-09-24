@@ -145,6 +145,30 @@ img {
     text-decoration: underline;
 }
 
+.location {
+    display: flex; /* Enable Flexbox layout */
+    align-items: center; /* Center items vertically */
+    margin-top: 1rem; /* Add space above the location section */
+}
+
+.location img {
+    width: 150px; /* Set a width for the image */
+    margin-right: 1rem; /* Space between image and text */
+    font-size: x-small;
+}
+
+.location-content {
+    flex: 1; /* Allow the text to take the remaining space */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-size-adjust: 6px;
+    padding: 1;
+}
+
+.location-content p {
+    margin: 0; /* Remove default margin for cleaner alignment */
+}
+
+
 .location img {
     width: 150px;
     margin-right: 1rem;
@@ -169,6 +193,10 @@ img {
     text-decoration: underline;
 }
 
+.resources{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: solid;
+}
 /* Footer styles */
 footer {
     background-color: #03324A;
