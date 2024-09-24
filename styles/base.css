@@ -1,47 +1,131 @@
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f4f4f9;
 }
 
 header {
-    background-color: #333;
+    background-color: #03324A;
     color: white;
     padding: 1rem;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header h1 .highlight {
+    color: #fdda38;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 main {
+    display: flex;
+    justify-content: space-around;
     padding: 1rem;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    img {
+        max-width: 80%; /* Resize the image for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        max-width: 100%; /* Full width for mobile screens */
+    }
+}
+
 
 .card {
     background-color: white;
     border-radius: 8px;
-    padding: 1rem;
-    margin-bottom: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1rem;
+    width: 45%;
 }
 
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-content p {
+    width: 70%;
+}
+
+.about-content img {
+    width: 25%;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.location img {
+    width: 150px;
+    margin-right: 1rem;
+}
+
+.resources ul {
+    padding: 0;
+    list-style: none;
+}
+
+.resources ul li {
+    margin-bottom: 0.5rem;
+}
+
+.resources ul li a {
+    color: #551a8b;
+    text-decoration: none;
+}
+
+.resources ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
 footer {
-    background-color: #333;
+    background-color: #03324A;
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
 }
