@@ -1,31 +1,46 @@
-/* Reset default styles */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Define colors */
-.pink {
-  background-color: pink;
-}
-.blue {
-  background-color: blue;
-}
-.coral {
-  background-color: coral;
-}
-.yellow {
-  background-color: yellow;
-}
-.green {
-  background-color: green;
-}
-
-/* Layout */
-
-
-.ex3 .parent {
   display: grid;
-  grid-template-columns: minmax(150px, 25%) 1fr;
+  height: 100vh;
+  grid-template: auto 1fr auto / 300px 1fr auto;
+}
+
+header {
+  background: lightpink;
+  padding: 1rem;
+  grid-column: 1 / 4;
+  text-align: left;
+}
+
+.left-sidebar {
+  background: lightblue;
+  grid-column: 1 / 2;
+}
+
+main {
+  background: coral;
+  grid-column: 2 / 3;
+  padding: 2rem;
+}
+
+.right-sidebar {
+  background: yellow;
+  grid-column: 3 / 4;
+}
+
+footer {
+  background: wheat;
+  padding: 2rem;
+  text-align: left;
+  grid-column: 1 / 4;
+}
+
+.left-sidebar,
+.right-sidebar {
+  padding: 1rem;
+  background-color: aqua;
+}
+
+.parent {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
 }
