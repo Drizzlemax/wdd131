@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sansita", sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        /* Stack elements vertically */
+    }
+
+    nav ul {
+        display: none;
+        /* Hide the navigation menu by default */
+    }
+
+    /* Show the navigation menu when the hamburger button is clicked */
+    #hamburgerButton {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+
+    #hamburgerButton {
+        display: none;
+        position: fixed;
+        top: 50%;
+        /* Adjust the top position as needed */
+        left: 20px;
+        /* Adjust the left position as needed */
+        transform: translateY(-50%);
+        /* Center vertically */
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    #hamburgerButton.active {
+        /* Apply styles when the button is active */
+        transform: rotate(90deg);
+    }
+
+    #mobileNav {
+        display: none;
+        background-color: #f0f0f0;
+        padding: 10px;
+    }
+
+    #mobileNav.active {
+        display: block;
+    }
+}
+
+header,
+main {
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav {
+    background-color: #f3f6f8;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: #eee;
+    color: #000;
+}
+
+.active {
+    color: yellow;
+}
+
+.temple-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.temple-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.temple-item img {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
