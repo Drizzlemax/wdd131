@@ -1,0 +1,12 @@
+/* Add a transition for smooth opening/closing */
+.data-card, .weather-card {
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    max-height: 500px;  /* Initial state (fully opened) */
+    opacity: 1;
+    overflow: hidden;
+}
+
+.data-card.collapsed, .weather-card.collapsed {
+    max-height: 0;  /* Collapsed state */
+    opacity: 0;
+}
