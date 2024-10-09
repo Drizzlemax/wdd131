@@ -1,3 +1,91 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #c70039;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+main {
+    background-image: url('lemurs-background.jpg'); /* Use a similar image to replicate */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 1rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.data-card, .weather-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 1rem;
+}
+
+h2 {
+    background-color: #006400; /* Dark green */
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 3px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 0.5rem 0;
+}
+
+footer {
+    background-color: #c70039;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info {
+        flex-direction: column;
+    }
+
+    .data-card, .weather-card {
+        margin: 1rem 0;
+    }
+}
+
+
+
+
+
 /* Add a transition for smooth opening/closing */
 .data-card, .weather-card {
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
