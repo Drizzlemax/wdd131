@@ -1,0 +1,73 @@
+/* styles.css */
+/* styles.css */
+
+/* Existing CSS here... */
+
+/* Additional styles for wider screens */
+@media (min-width: 769px) {
+    .info {
+        display: flex; /* Use Flexbox for layout */
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+        flex-wrap: wrap; /* Allow wrapping of items */
+        position: relative; /* Enable absolute positioning for cards */
+    }
+
+    .data-card,
+    .weather-card {
+        width: 150px; /* Smaller width for the cards */
+        height: 150px; /* Smaller height for the cards */
+        margin: 1rem; /* Spacing around cards */
+        position: absolute; /* Absolute positioning */
+        top: 50%; /* Center vertically */
+        transform: translateY(-50%); /* Adjust position to center */
+        border: 2px solid #c70039; /* Border color same as header */
+        border-radius: 5px; /* Optional: rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+        padding: 10px; /* Padding inside the cards */
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+        overflow: auto; /* Allow scrolling if content exceeds card size */
+    }
+
+    .data-card {
+        left: 5%; /* Position on the left side */
+    }
+
+    .weather-card {
+        right: 5%; /* Position on the right side */
+    }
+
+    .hero-img {
+        width: 102%; /* Hero image takes full width of the container */
+        display: flex; /* Center image content */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        margin: 1rem 0; /* Spacing around hero image */
+    }
+
+    .hero-img img {
+        width: 120%; /* Increase image size by 20% */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Maintain aspect ratio */
+        border-radius: 10px; /* Optional: rounded corners */
+        margin-left: -15%; /* Shift image left to center it */
+    }
+
+    .hero-img.hero1 {
+        display: none; /* Hide the first hero image on wider screens */
+    }
+
+    .hero-img.hero2 {
+        display: flex; /* Show the second hero image */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-img.hero2 {
+        display: none; /* Hide the second hero image on smaller screens */
+    }
+
+    .hero-img.hero1 {
+        display: flex; /* Show the first hero image on smaller screens */
+    }
+}
