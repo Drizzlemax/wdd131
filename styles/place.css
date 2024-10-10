@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #c70039;
+    background-color: #006400; /* Dark Green */
     color: white;
     text-align: center;
     padding: 1rem;
@@ -14,24 +14,35 @@ header {
 }
 
 main {
-    background-image: url('lemurs-background.jpg'); /* Use a similar image to replicate */
-    background-size: cover;
-    background-position: center;
     min-height: 100vh;
     padding: 2rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    background-color: #f0f0f0;
 }
 
 .info {
     display: flex;
-    justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem;
     border-radius: 10px;
     width: 80%;
     max-width: 1200px;
+    position: relative;
+}
+
+.hero-img {
+    width: calc(100% - 20px); /* Adjusting width to account for padding */
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 1rem 0;
+    border: 5px solid #c70039; /* Red border */
+    padding: 10px; /* Padding around the image */
 }
 
 .data-card, .weather-card {
@@ -41,10 +52,16 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex: 1;
     margin: 0 1rem;
+    width: 100%;
+    max-width: 500px;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    max-height: 500px; /* Initial state (fully opened) */
+    opacity: 1;
+    overflow: hidden;
 }
 
 h2 {
-    background-color: #006400; /* Dark green */
+    background-color: #c70039; /* Red */
     color: white;
     padding: 0.5rem;
     text-align: center;
@@ -80,18 +97,15 @@ footer {
     .data-card, .weather-card {
         margin: 1rem 0;
     }
-}
 
+    .hero-img {
+        height: 100px;
+    }
 
-
-
-
-/* Add a transition for smooth opening/closing */
-.data-card, .weather-card {
-    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    max-height: 500px;  /* Initial state (fully opened) */
-    opacity: 1;
-    overflow: hidden;
+    /* Adjust width for smaller screens */
+    .hero-img {
+        width: calc(100% - 20px); /* Keep padding effect */
+    }
 }
 
 .data-card.collapsed, .weather-card.collapsed {
