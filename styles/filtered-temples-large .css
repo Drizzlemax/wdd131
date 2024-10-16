@@ -1,34 +1,20 @@
-@media screen and (min-width: 500px) {
-    header {
-      background-color: black;
-      color: white;
-    }
+@media screen and (min-width: 880px) {
+  h1.handler {
+    display: block;
+    width: 100%;
   }
 
- 
- 
-  header {
-    background-color: #87CEEB; /* Sky blue color */
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+  #hambutton {
+    display: none;
+  }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
+  nav {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 
-nav ul li {
-    margin-right: 20px;
+  nav a {
+    display: block;
+    font-size: 1.5rem;
+  }
 }
-
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
