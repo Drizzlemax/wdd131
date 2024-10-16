@@ -7,11 +7,12 @@ document.querySelector('#lastModified').textContent = `Last Modification: ${docu
 const hambutton = document.querySelector('#hambutton');
 
 hambutton.addEventListener('click', () => {
-    document.querySelector('h1').classList.toggle('show');
-    document.querySelector('#navmenu').classList.toggle('show');
-    hambutton.classList.toggle('show');
+  document.querySelector('h1').classList.toggle('show');
+  document.querySelector('#navmenu').classList.toggle('show');
+  hambutton.classList.toggle('show');
 });
 
+//temple data
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -99,14 +100,15 @@ const temples = [
 ];
 
 
+
 // Function to display temples
 function displayTemples(templeList) {
     const templeCards = document.getElementById("templeCards");
     templeCards.innerHTML = '';  // Clear previous content
-
+    
     templeList.forEach(temple => {
-        const card = document.createElement('figure');
-        card.innerHTML = `
+      const card = document.createElement('figure');
+      card.innerHTML = `
         <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
         <figcaption>
           <h3>${temple.templeName}</h3>
@@ -114,28 +116,29 @@ function displayTemples(templeList) {
           <p>Dedicated: ${temple.dedicated}</p>
           <p>Area: ${temple.area} sq. ft.</p>
         </figcaption>`;
-        templeCards.appendChild(card);
+      templeCards.appendChild(card);
     });
-}
-
-// Initial Display of All Temples
-displayTemples(temples);
-
-// Function to filter temples based on the navigation clicked
-function filterTemples(filter) {
+  }
+  
+  // Initial Display of All Temples
+  displayTemples(temples);
+  
+  // Function to filter temples based on the navigation clicked
+  function filterTemples(filter) {
     let filteredTemples;
-
+    
     if (filter === 'old') {
-        filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+      filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
     } else if (filter === 'new') {
-        filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+      filteredTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
     } else if (filter === 'large') {
-        filteredTemples = temples.filter(temple => temple.area > 90000);
+      filteredTemples = temples.filter(temple => temple.area > 90000);
     } else if (filter === 'small') {
-        filteredTemples = temples.filter(temple => temple.area < 10000);
+      filteredTemples = temples.filter(temple => temple.area < 10000);
     } else {
-        filteredTemples = temples;
+      filteredTemples = temples;
     }
-
+  
     displayTemples(filteredTemples);
-}
+  }
+  
