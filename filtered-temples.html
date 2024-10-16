@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 - TEMPLE ALBUM</title>
-  <meta name="description" content="Temple gallery showcasing my favourite temples.">
-  <meta name="Desmond Chibanda" content="[]">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/filtered-temples.css">
-  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - TEMPLE ALBUM</title>
+    <meta name="description" content="Temple gallery showcasing my favourite temples.">
+    <meta name="Desmond Chibanda" content="[]">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
 </head>
+
 <body>
-  <header>
-    <h1>Photo Album</h1>
-    <nav>
-      <button id="hamburgerButton">☰</button>
-      <nav id="mobileNav">
-        <ul>
-          <li><a href="#" id="home" class="active">Home</a></li>
-          <li><a href="#" id="old">Old</a></li>
-          <li><a href="#" id="new">New</a></li>
-          <li><a href="#" id="large">Large</a></li>
-          <li><a href="#" id="small">Small</a></li>
-        </ul>
-      </nav>
-    </nav>
-  </header>
-  <div id="temples-container"></div>
-  <main>
-    <ul></ul>
-    <h2>Home</h2>
-  </main>
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy;<span id="currentyear"></span> Desmond Chibanda | WDD131 Zimbabwe</p>
-    <p>Last Modification: <span id="lastModified"></span></p>
-  </footer>
-  <!-- Link to the JavaScript file -->
-  <script src="filtered-temples.js"></script>
-</body>
+
+    <body>
+        <header>
+            <h1 class="handler">Filtered Temple Album</h1>
+            <a href="#" id="hambutton" aria-label="Toggle navigation menu">Menu</a>
+
+            <nav id="navmenu">
+                <a href="#" onclick="filterTemples('all')">Home</a>
+                <a href="#" onclick="filterTemples('old')">Old</a>
+                <a href="#" onclick="filterTemples('new')">New</a>
+                <a href="#" onclick="filterTemples('large')">Large</a>
+                <a href="#" onclick="filterTemples('small')">Small</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Temple List</h2>
+            <div class="res-grid" id="templeCards">
+                <!-- Temple cards will be dynamically inserted here -->
+            </div>
+        </main>
+
+        <footer>
+            <p><span id="currentYear"></span> 💻 Anderson Okai 💻 Ghana</p>
+            <p class="smaller" id="lastModified">Last Modification: 01/01/1970 12:00:00</p>
+        </footer>
+    </body>
+
 </html>
