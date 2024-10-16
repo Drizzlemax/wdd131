@@ -16,35 +16,32 @@
 </head>
 
 <body>
+    <header>
+        <h1 class="handler">Filtered Temple Album</h1>
+        <a href="#" id="hambutton" aria-label="Toggle navigation menu">Menu</a>
 
-    <body>
-        <header>
-            <h1 class="handler">Filtered Temple Album</h1>
-            <a href="#" id="hambutton" aria-label="Toggle navigation menu">Menu</a>
+        <nav id="navmenu">
+            <a href="#" onclick="filterTemples('all')">Home</a>
+            <a href="#" onclick="filterTemples('old')">Old</a>
+            <a href="#" onclick="filterTemples('new')">New</a>
+            <a href="#" onclick="filterTemples('large')">Large</a>
+            <a href="#" onclick="filterTemples('small')">Small</a>
+        </nav>
+    </header>
 
-            <nav id="navmenu">
-                <a href="#" onclick="filterTemples('all')">Home</a>
-                <a href="#" onclick="filterTemples('old')">Old</a>
-                <a href="#" onclick="filterTemples('new')">New</a>
-                <a href="#" onclick="filterTemples('large')">Large</a>
-                <a href="#" onclick="filterTemples('small')">Small</a>
-            </nav>
-        </header>
-
-        <main>
-            <h2>Temple List</h2>
-            <div class="res-grid" id="templeCards">
-                <!-- Temple cards will be dynamically inserted here -->
-            </div>
-        </main>
+    <main>
+        <h2>Temple List</h2>
+        <div class="res-grid" id="templeCards">
+            <!-- Temple cards will be dynamically inserted here -->
+        </div>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🍀 Desmond Chibanda | WDD131 🍀 Zimbabwe</p>
+        <p>Last Modification: 16/10/2024 11:00:00 <span id="lastModified"></span></p>
+    </footer>
 
 
-        <!-- Footer Section -->
-        <footer>
-            <p>&copy;<span id="currentyear"></span> 🍀 Desmond Chibanda | WDD131 🍀 Zimbabwe</p>
-            <p>Last Modification: <span id="lastModified"></span></p>
-        </footer>
-
-    </body>
+</body>
 
 </html>
