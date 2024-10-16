@@ -141,3 +141,5 @@ function filterTemples(filter) {
 
   displayTemples(filteredTemples);
 }
+
+

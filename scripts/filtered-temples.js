@@ -98,6 +98,30 @@ const temples = [
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/montevideo-uruguay/400x250/montevideo-uruguay-temple-lds-83476-wallpaper.jpg",
   },
+
+  {
+    templeName: "Praia Cape Verde Temple",
+    location: " Praia, Santiago Cape Verde ",
+    dedicated: "2022, June, 19",
+    area: 8759,
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/praia-cape-verde-temple/praia-cape-verde-temple-27204-main.jpg"
+  
+  },
+  {
+    templeName: "Freetown Sierra Leone Temple",
+    location: "Kossoh Town, Freetown, Sierra Leone",
+    dedicated: "2019, October, 5",
+    area: 18000,
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/freetown-sierra-leone-temple/freetown-sierra-leone-temple-24087-main.jpg"
+  
+  },
+  {
+    templeName: "Stockholm Sweden Temple",
+    location: "SE-13742 Västerhaninge, Sweden",
+    dedicated: "1985, July, 4",
+    area: 31000,
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/stockholm-sweden-temple/stockholm-sweden-temple-30267-main.jpg"
+  },
 ];
 
 function displayTemples(temples) {
