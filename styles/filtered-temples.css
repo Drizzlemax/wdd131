@@ -1,164 +1,125 @@
 :root {
-    --purple: rgb(27, 6, 77);
-    --blue: rgb(29, 77, 114);
-    --blue-1: rgba(29, 77, 114, 0.1);
-    --blue-7: rgba(29, 77, 114, 0.7);
-    --brown: rgba(100, 50, 25, 1);
-    --yellow: rgba(255, 255, 0, 1);
-}
-
-* {
-    margin: 0;
-}
-
-html,
-body {
-    height: 100%;
+    --bgDarkColor: #4b127a;
+  }
+  
+  * {
     margin: 0;
     padding: 0;
-    font-family: Lato, Helvetica, Arial, sans-serif;
-}
-
-header {
-    background-color: var(--purple);
-    color: white;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", system-ui;
+  }
+  
+  header {
+    background-color: var(--bgDarkColor);
+    color: #fff;
+  }
+  
+  header div {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    position: relative;
-}
-
-h1 {
-    padding: 1.5rem;
-}
-
-#hambutton {
-    display: block;
-    font-size: 3rem;
-    background-color: var(--purple);
-    text-decoration: none;
-    color: white;
-    border: none;
-    padding: 0 .5rem;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  header div h1 {
+    text-align: center;
+  }
+  
+  header div span {
+    font-size: 1.5rem;
     cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 1rem;
-}
-
-#hambutton::before {
-    content: "≡";
-}
-
-#hambutton.show::before {
-    content: "X";
-}
-
-nav {
+  }
+  
+  header nav {
+    display: none;
+  }
+  
+  header nav.display {
     display: flex;
     flex-direction: column;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 1rem 1.5rem;
-    display: none;
-    font-size: 2rem;
-}
-
-nav a:hover,
-nav a:active {
-    color: var(--yellow);
-    font-weight: 700;
-}
-
-nav a:hover~#navmenu~#hambutton {
-    background-color: var(--yellow);
-    color: #000;
-}
-
-nav.show {
-    width: 100%;
-}
-
-h1.show {
-    display: none;
-}
-
-.show a {
-    display: block;
-    text-align: center;
-}
-
-main {
-    max-width: 900px;
-    margin: 1.5rem auto;
+  }
+  
+  header nav a {
+    flex: 1 1 100%;
     padding: 1rem;
-}
-
-main img {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  header nav a:hover {
+    background-color: #00000022;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  main h2 {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    place-items: center;
+  }
+  
+  .container figure img {
     width: 100%;
     height: auto;
-}
-
-h2 {
+  }
+  
+  .container figure figcaption {
+    padding: 0.5rem;
     text-align: center;
-    margin-bottom: 1.5rem;
-
-}
-
-.res-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1rem;
-}
-
-
-
-figure {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px var(--shadow-light);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-figure:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
-
-figure img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-figcaption {
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    height: 100%;
+    border: 1px solid #bbbbbb;
     padding: 1rem;
-    color: var(--purple);
-}
-
-figcaption h3 {
-    margin: 0.5rem 0;
-    font-size: 1.4rem;
-}
-
-figcaption p {
-    margin: 0.3rem 0;
-    font-size: 1rem;
-    color: var(--blue);
-}
-
-footer {
-    background-color: var(--purple);
-    color: white;
+    background-color: #ebebeb;
+  }
+  
+  .cardContainer div p {
     text-align: center;
-    padding: 10px;
-}
-
-.smaller {
-    font-size: smaller;
-}
+  }
+  
+  .cardContainer img {
+    display: block;
+    box-shadow: 0 0 15px #7c7c7c;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  footer {
+    padding: 1.5rem;
+    background: var(--bgDarkColor);
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  
+  footer p {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .highlighted {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
