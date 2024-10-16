@@ -12,29 +12,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/filtered-temples.css">
     <link rel="stylesheet" href="styles/filtered-temples-large.css">
-    <script defer src="scripts/filtered-temples.js"></script>
+    <script src="scripts/filtered-temples.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1 class="handler">Filtered Temple Album</h1>
-        <a href="#" id="hambutton" aria-label="Toggle navigation menu">Menu</a>
+  <header>
+    <div>
+      <h1>Temple Album</h1>
+      <span id="btnBurguer">☰</span>
+    </div>
+    <nav id="navBar">
+      <a href="#" id="home">Home</a>
+      <a href="#" id="old">Old</a>
+      <a href="#" id="new">New</a>
+      <a href="#" id="large">Large</a>
+      <a href="#" id="small">Small</a>
+    </nav>
+  </header>
+  <main>
+    <h2 id="mainTitle">Home</h2>
+    <div class="container">
 
-        <nav id="navmenu">
-            <a href="#" onclick="filterTemples('all')">Home</a>
-            <a href="#" onclick="filterTemples('old')">Old</a>
-            <a href="#" onclick="filterTemples('new')">New</a>
-            <a href="#" onclick="filterTemples('large')">Large</a>
-            <a href="#" onclick="filterTemples('small')">Small</a>
-        </nav>
-    </header>
-
-    <main>
-        <h2>Temple List</h2>
-        <div class="res-grid" id="templeCards">
-            <!-- Temple cards will be dynamically inserted here -->
-        </div>
-    </main>
+    </div>
+  </main>
     <!-- Footer Section -->
     <footer>
         <p>&copy;<span id="currentyear"></span> 🍀 Desmond Chibanda | WDD131 🍀 Zimbabwe</p>
