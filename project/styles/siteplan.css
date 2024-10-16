@@ -1,0 +1,57 @@
+/* styles.css */
+
+/* Background and Body */
+body {
+    background-color: #8B4513;
+    /* Rustic Brown */
+    color: #000000;
+    /* Default text color */
+    font-family: Arial, sans-serif;
+}
+
+/* Headers */
+h1,
+h2,
+h3 {
+    color: #556B2F;
+    /* Earthy Green */
+}
+
+/* Typography */
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Body Text */
+body, p, li {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Buttons and Accents */
+.btn, a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Buttons and Accents */
+.btn,
+a {
+    background-color: #556B2F;
+    /* Earthy Green */
+    color: #ffffff;
+    /* White text for contrast */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #8B4513;
+    /* Rustic Brown */
+    color: #ffffff;
+    /* White text in footer */
+    padding: 20px;
+}
