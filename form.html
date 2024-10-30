@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Review the product">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <meta name="author" content="Sarah Toronto">
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <label for="product" class="titles">Product Name <span>*</span></label>
+            <select name="product" id="product" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+
+            <div class="titles">Overall Rating <span>*</span></div>
+            <label for="onestar"><input type="radio" id="onestar" name="stars" required> ⭐</label>
+            <label for="twostar"><input type="radio" id="twostar" name="stars" required> ⭐⭐</label>
+            <label for="threestar"><input type="radio" id="threestar" name="stars" required> ⭐⭐⭐</label>
+            <label for="fourstar"><input type="radio" id="fourstar" name="stars" required> ⭐⭐⭐⭐</label>
+            <label for="fivestar"><input type="radio" id="fivestar" name="stars" required> ⭐⭐⭐⭐⭐</label>
+
+            <label for="date" class="titles">Date of Installation <span>*</span><input type="date" id="date" name="date"
+                    required></label>
+
+            <div class="titles">Which features did you find useful in the product? (Check all that apply)</div>
+            <label for="durability"><input type="checkbox" name="durability" id="durability" value="yes">
+                Durability</label>
+            <label for="ease"><input type="checkbox" name="ease" id="ease" value="yes"> Ease of Use</label>
+            <label for="performance"><input type="checkbox" name="performance" id="performance" value="yes">
+                Performance</label>
+            <label for="design"><input type="checkbox" name="design" id="design" value="yes"> Design</label>
+
+            <label for="writtenrev" class="titles">Written Review <span>(Optional)</span></label>
+            <textarea id="writtenrev" name="writtenrev"></textarea>
+
+            <label for="username" class="titles">Your name <span>(Optional)</span><input type="text" id="username"
+                    name="username"></label>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+ <!-- Footer Section -->
+ <footer>
+    <p>&copy;<span id="currentyear"></span> 🍀 Desmond Chibanda | WDD131 🍀 Zimbabwe</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+
+</html>

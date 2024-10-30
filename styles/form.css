@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+}
+
+body {
+    max-width: 500px;
+    margin: 1rem;
+    color: #fff;
+    font-family: Roboto;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+}
+
+form {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 7px;
+}
+
+.titles {
+    margin-top: 1.5rem;
+}
+
+input, select, option, textarea {
+    padding: 13px;
+    border-radius: 7px;
+    font-size: medium;
+}
+
+input[type=radio] {
+    margin-top: 0.6rem;
+}
+
+input[type=checkbox] {
+    margin-top: 1rem;
+}
+
+
+input[type=text],
+input[type=date] {
+    width: 93%;
+    
+}
+
+span {
+    color: rgb(50, 207, 247);
+}
+
+textarea {
+    font-family: Roboto;
+    padding-bottom: 4rem;
+}
+
+input[type=submit] {
+    margin-top: 3rem;
+    font-size: large;
+    background: linear-gradient(rgb(243, 82, 33), #da3a09);
+    color: #fff;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background: linear-gradient(#043508, #50720c);
+    text-decoration: underline;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid #585858;
+    border-right: 2px solid #585858;
+}
+
+
+footer {
+    background-color: rgb(12, 12, 12);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 7px;
+}
+
+.reviewpage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-size: 50px;
+    height: 300px;
+}
+
+.reviewpage span {
+    color: #71380c;
+}
