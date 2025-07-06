@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-  <meta charset="utf-8"> <!-- Meta charset tag corrected -->
-  <meta name="author" content="Desmond Chibanda">
-  <meta name="description" content="An introduction landing page about my journey learning WDD 131 - Dynamic Web Fundamentals as a Web Developer Student from BYU-I">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 - Dynamic Web Fundamentals - Desmond Chibanda</title>
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <script src="scripts/getdates.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="author" content="Desmond Chibanda">
+    <meta name="description"
+        content="An introduction landing page about my journey learning WDD 131 - Dynamic Web Fundamentals as a Web Developer Student from BYU-I">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Desmond Chibanda</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
+    <!-- Sticky Header -->
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Desmond Chibanda</span></h1>
-        <nav>
-            <div class="nav-links">
+        <div class="header-container">
+            <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Desmond Chibanda</span></h1>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">&#9776;</button>
+        </div>
+        <nav class="nav-links" id="mainNav">
             <ul>
                 <li><a href="https://byui.instructure.com/">I-Learn</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/6?lang=eng&id=p63#p63">Scripture</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/6?lang=eng&id=p63#p63">Scripture</a>
+                </li>
                 <li><a href="#">Final Project</a></li>
                 <li><a href="https://www.linkedin.com/in/desmondchibanda">LinkedIn</a></li>
             </ul>
-           </div>
         </nav>
     </header>
 
-    <!-- Main Content Section - moved outside of header -->
     <main>
+        <!-- About Me Section -->
         <section class="card about">
-            <div class="card-header">
             <h2>About Me</h2>
-            </div>
             <div class="about-content">
-                <p>My name is Desmond and I go by Linx. I was born in Zimbabwe and live with my family in Cape Town, South Africa. I am currently working as a Uber driver. My family is my world, and I love spending time with them. I love to travel, and I enjoy discovering and learning new things.</p>
-                <img src="images/profile.jpg" alt="Desmond Chibanda">
+                <img src="images/profile.jpg" alt="Portrait of Desmond Chibanda" class="profile-img">
+                <p>Hello! I'm <strong>Desmond Chibanda</strong>, also known as <em>Linx</em>. I was born in Zimbabwe and
+                    currently live in Cape Town, South Africa.
+                    I work as an Uber driver and am passionate about family, travel, and personal growth. I enjoy
+                    discovering new places and learning new skills—especially in the world of web development!</p>
             </div>
-           <div class="name-place">
-            <h3>Harare, Zimbabwe</h3>
-           </div>
-            <div class="location">
-               <figcaption> <img src="images/zimbabwe-flag.jpg" alt="Official Flag of Zimbabwe" > <figure>Official Flag of Zimbabwe</figure></figcaption>  
-            </div>
+            <h3>Hometown: Harare, Zimbabwe</h3>
+            <figure class="flag">
+                <img src="images/zimbabwe-flag.jpg" alt="Zimbabwean national flag">
+                <figcaption>Official Flag of Zimbabwe</figcaption>
+            </figure>
             <div class="location-content">
-                <p>Zimbabwe is a landlocked country in southern Africa known for its diverse landscapes and wildlife. Its capital, Harare, is a bustling city full of culture and history. Zimbabwe is home to Victoria Falls, one of the Seven Natural Wonders of the World, as well as diverse flora and fauna. It has a rich history, with ancient stone cities like Great Zimbabwe as part of its heritage.</p> 
+                <p>Zimbabwe is a beautiful landlocked country in Southern Africa, rich in history, culture, and natural
+                    wonders.
+                    Its capital, Harare, is a vibrant city full of energy. Zimbabwe is home to majestic sites like
+                    Victoria Falls and the Great Zimbabwe ruins—reminders of the country’s powerful legacy.</p>
             </div>
         </section>
 
+        <!-- Resources Section -->
         <section class="card resources">
-            <div class="card-header">
-              <h2>Web Dev Resources</h2>
-            </div>  
-            <ul> 
-                <div class="resource">
-                <li><a href="https://dev.to">Dev.to Community</a></li>
-                <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
-                <li><a href="https://css-tricks.com">CSS Tricks</a></li>
-                <li><a href="https://www.w3schools.com">W3 Schools</a></li>
-                <li><a href="https://www.udemy.com">Udemy</a></li>
-                <li><a href="https://www.freecodecamp.org/">Freecodecamp</a></li>
-                </div>
+            <h2>Web Development Resources</h2>
+            <ul>
+                <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
             </ul>
         </section>
     </main>
 
-    <!-- Footer Section -->
     <footer>
         <p>&copy;<span id="currentyear"></span> 🍀 Desmond Chibanda | WDD131 🍀 Zimbabwe</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
-
 </body>
+
 </html>
