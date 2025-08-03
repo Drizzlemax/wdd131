@@ -1,57 +1,118 @@
-/* styles.css */
-
-/* Background and Body */
+/* General Styles */
 body {
-    background-color: #8B4513;
-    /* Rustic Brown */
-    color: #000000;
-    /* Default text color */
-    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+    color: #333;
 }
 
-/* Headers */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
 h1,
 h2,
 h3 {
-    color: #556B2F;
-    /* Earthy Green */
+    margin-bottom: 10px;
 }
 
-/* Typography */
-
-/* Headings */
-h1, h2, h3 {
-    font-family: 'Roboto Slab', serif;
+ul {
+    padding-left: 20px;
 }
 
-/* Body Text */
-body, p, li {
-    font-family: 'Lato', sans-serif;
+/* Header */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo-1504851149312-7a075b496cc7') center/cover no-repeat;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-/* Buttons and Accents */
-.btn, a {
-    font-family: 'Open Sans', sans-serif;
+.hero h1 {
+    font-size: 3em;
 }
 
+.hero p {
+    font-size: 1.5em;
+}
 
-/* Buttons and Accents */
-.btn,
-a {
-    background-color: #556B2F;
-    /* Earthy Green */
-    color: #ffffff;
-    /* White text for contrast */
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+/* Sections */
+.section {
+    margin: 50px 0;
+}
+
+.section h2 {
+    color: #222;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Cards and Grid */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .site-map {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.green {
+    background-color: #e8f5e9;
+    border-left: 5px solid #388e3c;
+}
+
+.blue {
+    background-color: #e3f2fd;
+    border-left: 5px solid #1976d2;
+}
+
+.purple {
+    background-color: #ede7f6;
+    border-left: 5px solid #6a1b9a;
+}
+
+.solution {
+    margin-top: 10px;
+    padding: 10px;
+    border-left: 4px solid #1976d2;
+    background: #fff;
+    font-size: 0.9em;
 }
 
 /* Footer */
-footer {
-    background-color: #8B4513;
-    /* Rustic Brown */
-    color: #ffffff;
-    /* White text in footer */
-    padding: 20px;
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.socials a {
+    color: #bbb;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+.socials a:hover {
+    color: #4caf50;
 }

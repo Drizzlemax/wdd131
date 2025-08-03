@@ -2,46 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zimbabwe Hiking Trails - Site Plan</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .hero-pattern {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="font-sans bg-gray-50">
-    <!-- Header -->
-    <header class="hero-pattern text-white py-20 px-4 md:px-10">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">Zimbabwe Hiking Trails</h1>
-            <p class="text-xl md:text-2xl mb-8">Your guide to exploring Zimbabwe's breathtaking landscapes</p>
-            <p class="text-sm opacity-80">Domain: zimhikingtrails.org</p>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Zimbabwe Hiking Trails</h1>
+            <p>Your guide to exploring Zimbabwe's breathtaking landscapes</p>
+            <small>Domain: zimhikingtrails.org</small>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 md:px-10 py-12">
+    <main class="container">
         <!-- Site Purpose -->
-        <section class="mb-16 bg-white rounded-lg shadow-md p-6 md:p-8">
-            <h2 class="text-2xl md:text-3xl font-bold text-green-800 mb-6 flex items-center">
-                <i class="fas fa-bullseye mr-3"></i> Site Purpose
-            </h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-green-50 p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold text-green-700 mb-3">Primary Goal</h3>
-                    <p class="text-gray-700">To serve as a comprehensive guide for hikers in Zimbabwe, providing
-                        detailed information about trails across the country.</p>
+        <section class="section">
+            <h2><i class="fas fa-bullseye"></i> Site Purpose</h2>
+            <div class="grid">
+                <div class="card green">
+                    <h3>Primary Goal</h3>
+                    <p>To serve as a comprehensive guide for hikers in Zimbabwe, providing detailed information about
+                        trails across the country.</p>
                 </div>
-                <div class="bg-green-50 p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold text-green-700 mb-3">Features</h3>
-                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                <div class="card green">
+                    <h3>Features</h3>
+                    <ul>
                         <li>Trail difficulty levels and locations</li>
                         <li>Distance and best seasons to hike</li>
                         <li>Safety tips and gear recommendations</li>
@@ -52,139 +42,98 @@
         </section>
 
         <!-- Scenarios -->
-        <section class="mb-16 bg-white rounded-lg shadow-md p-6 md:p-8">
-            <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-6 flex items-center">
-                <i class="fas fa-question-circle mr-3"></i> User Scenarios
-            </h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-blue-50 p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Scenario 1</h3>
-                    <p class="text-gray-700 mb-4">"Which hiking trail in Zimbabwe is best for a beginner?"</p>
-                    <div class="bg-white p-4 rounded border-l-4 border-blue-500">
-                        <p class="text-sm text-gray-600">Solution: Create a 'Beginner Trails' section with easy-rated
-                            hikes, short distances, and gentle elevation.</p>
-                    </div>
+        <section class="section">
+            <h2><i class="fas fa-question-circle"></i> User Scenarios</h2>
+            <div class="grid">
+                <div class="card blue">
+                    <h3>Scenario 1</h3>
+                    <p>"Which hiking trail in Zimbabwe is best for a beginner?"</p>
+                    <div class="solution">Create a 'Beginner Trails' section with easy-rated hikes, short distances, and
+                        gentle elevation.</div>
                 </div>
-                <div class="bg-blue-50 p-6 rounded-lg">
-                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Scenario 2</h3>
-                    <p class="text-gray-700 mb-4">"Where can I find information on hiking safety in the Matopos National
-                        Park?"</p>
-                    <div class="bg-white p-4 rounded border-l-4 border-blue-500">
-                        <p class="text-sm text-gray-600">Solution: Include park-specific safety pages with local
-                            hazards, emergency contacts, and regulations.</p>
-                    </div>
+                <div class="card blue">
+                    <h3>Scenario 2</h3>
+                    <p>"Where can I find information on hiking safety in the Matopos National Park?"</p>
+                    <div class="solution">Include park-specific safety pages with local hazards, emergency contacts, and
+                        regulations.</div>
                 </div>
             </div>
         </section>
 
         <!-- Site Map -->
-        <section class="bg-white rounded-lg shadow-md p-6 md:p-8">
-            <h2 class="text-2xl md:text-3xl font-bold text-purple-800 mb-6 flex items-center">
-                <i class="fas fa-sitemap mr-3"></i> Proposed Site Structure
-            </h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Home -->
-                <div class="bg-purple-50 p-5 rounded-lg">
-                    <h3 class="font-semibold text-purple-700 mb-3 flex items-center">
-                        <i class="fas fa-home mr-2"></i> Home
-                    </h3>
-                    <ul class="text-gray-700 space-y-2 text-sm">
-                        <li class="pl-5">Featured trails</li>
-                        <li class="pl-5">Seasonal highlights</li>
-                        <li class="pl-5">Quick search</li>
+        <section class="section">
+            <h2><i class="fas fa-sitemap"></i> Proposed Site Structure</h2>
+            <div class="grid site-map">
+                <div class="card purple">
+                    <h3><i class="fas fa-home"></i> Home</h3>
+                    <ul>
+                        <li>Featured trails</li>
+                        <li>Seasonal highlights</li>
+                        <li>Quick search</li>
                     </ul>
                 </div>
-
-                <!-- Trails -->
-                <div class="bg-purple-50 p-5 rounded-lg">
-                    <h3 class="font-semibold text-purple-700 mb-3 flex items-center">
-                        <i class="fas fa-map-marked-alt mr-2"></i> Trails
-                    </h3>
-                    <ul class="text-gray-700 space-y-2 text-sm">
-                        <li class="pl-5">By difficulty</li>
-                        <li class="pl-5">By region</li>
-                        <li class="pl-5">By distance</li>
-                        <li class="pl-5">Trail details</li>
+                <div class="card purple">
+                    <h3><i class="fas fa-map-marked-alt"></i> Trails</h3>
+                    <ul>
+                        <li>By difficulty</li>
+                        <li>By region</li>
+                        <li>By distance</li>
+                        <li>Trail details</li>
                     </ul>
                 </div>
-
-                <!-- Resources -->
-                <div class="bg-purple-50 p-5 rounded-lg">
-                    <h3 class="font-semibold text-purple-700 mb-3 flex items-center">
-                        <i class="fas fa-info-circle mr-2"></i> Resources
-                    </h3>
-                    <ul class="text-gray-700 space-y-2 text-sm">
-                        <li class="pl-5">Safety tips</li>
-                        <li class="pl-5">Gear guide</li>
-                        <li class="pl-5">Weather info</li>
-                        <li class="pl-5">Permits & fees</li>
+                <div class="card purple">
+                    <h3><i class="fas fa-info-circle"></i> Resources</h3>
+                    <ul>
+                        <li>Safety tips</li>
+                        <li>Gear guide</li>
+                        <li>Weather info</li>
+                        <li>Permits & fees</li>
                     </ul>
                 </div>
-
-                <!-- Community -->
-                <div class="bg-purple-50 p-5 rounded-lg">
-                    <h3 class="font-semibold text-purple-700 mb-3 flex items-center">
-                        <i class="fas fa-users mr-2"></i> Community
-                    </h3>
-                    <ul class="text-gray-700 space-y-2 text-sm">
-                        <li class="pl-5">Trail reviews</li>
-                        <li class="pl-5">Photo gallery</li>
-                        <li class="pl-5">Forum</li>
+                <div class="card purple">
+                    <h3><i class="fas fa-users"></i> Community</h3>
+                    <ul>
+                        <li>Trail reviews</li>
+                        <li>Photo gallery</li>
+                        <li>Forum</li>
                     </ul>
                 </div>
-
-                <!-- About -->
-                <div class="bg-purple-50 p-5 rounded-lg">
-                    <h3 class="font-semibold text-purple-700 mb-3 flex items-center">
-                        <i class="fas fa-address-card mr-2"></i> About
-                    </h3>
-                    <ul class="text-gray-700 space-y-2 text-sm">
-                        <li class="pl-5">Our mission</li>
-                        <li class="pl-5">Contact</li>
-                        <li class="pl-5">Partners</li>
+                <div class="card purple">
+                    <h3><i class="fas fa-address-card"></i> About</h3>
+                    <ul>
+                        <li>Our mission</li>
+                        <li>Contact</li>
+                        <li>Partners</li>
                     </ul>
                 </div>
-
-                <!-- Blog -->
-                <div class="bg-purple-50 p-5 rounded-lg">
-                    <h3 class="font-semibold text-purple-700 mb-3 flex items-center">
-                        <i class="fas fa-newspaper mr-2"></i> Blog
-                    </h3>
-                    <ul class="text-gray-700 space-y-2 text-sm">
-                        <li class="pl-5">Hiking stories</li>
-                        <li class="pl-5">Trail updates</li>
-                        <li class="pl-5">Conservation news</li>
+                <div class="card purple">
+                    <h3><i class="fas fa-newspaper"></i> Blog</h3>
+                    <ul>
+                        <li>Hiking stories</li>
+                        <li>Trail updates</li>
+                        <li>Conservation news</li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 px-4">
-        <div class="container mx-auto">
-            <div class="text-center">
-                <div class="text-gray-400 mb-4">
-                    <i class="fas fa-map-marker-alt mr-2"></i>
-                    <p class="mb-4">© 2025 Zimbabwe Hiking Trails</p>
-                    <p>&copy;<span id="currentyear"></span> 🍀 Desmond Chibanda | WDD131 🍀 Zimbabwe</p>
-                    <p>Last Modification: 02/08/2025 22:47:47 <span id="lastModified"></span></p>
-                </div>
-                <div class="flex justify-center space-x-4">
-                    <a href="#" class="hover:text-green-300"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="hover:text-green-300"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="hover:text-green-300"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+    <footer class="footer">
+        <p>© 2025 Zimbabwe Hiking Trails</p>
+        <p>&copy;<span id="currentyear"></span> 🍀 Desmond Chibanda | WDD131 🍀 Zimbabwe</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+        <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
 
     <script>
-        // Simple JavaScript for demonstration
-        document.addEventListener('DOMContentLoaded', function () {
-            console.log('Zimbabwe Hiking Trails site plan loaded');
-        });
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
     </script>
+
 </body>
 
 </html>
