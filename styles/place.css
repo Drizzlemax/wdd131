@@ -4,8 +4,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    /* No errors now, moved comment outside the block */
 }
 
+/* Header */
 header {
     background-color: #006400; /* Dark Green */
     color: white;
@@ -14,6 +16,7 @@ header {
     font-size: 2rem;
 }
 
+/* Main section */
 main {
     min-height: 100vh;
     padding: 2rem;
@@ -23,6 +26,7 @@ main {
     background-color: #f0f0f0;
 }
 
+/* Info container */
 .info {
     display: flex;
     flex-direction: column;
@@ -35,20 +39,23 @@ main {
     position: relative;
 }
 
+/* Hero image container */
 .hero-img {
     width: 100%;
     border: 5px solid #c70039; /* Red border */
     border-radius: 10px;
     margin: 1rem 0;
-    overflow: hidden; /* To ensure the image stays within the border */
+    overflow: hidden; /* Keep image inside border */
 }
 
+/* Hero image styling */
 .hero-img img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove the default space below the image */
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
+/* Card styles */
 .data-card, .weather-card {
     background-color: #fff;
     padding: 1rem;
@@ -59,11 +66,12 @@ main {
     width: 100%;
     max-width: 500px;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    max-height: 500px; /* Initial state (fully opened) */
+    max-height: 500px;
     opacity: 1;
     overflow: hidden;
 }
 
+/* Headings */
 h2 {
     background-color: #c70039; /* Red */
     color: white;
@@ -72,6 +80,7 @@ h2 {
     border-radius: 3px;
 }
 
+/* List styles */
 ul {
     list-style-type: none;
     padding: 0;
@@ -81,17 +90,18 @@ li {
     padding: 0.5rem 0;
 }
 
+/* Footer */
 footer {
     background-color: #c70039;
     color: white;
     text-align: center;
     padding: 1rem;
     font-size: 0.8rem;
-    position: relative; /* Change from absolute for better footer behavior */
+    position: relative;
     width: 100%;
 }
 
-/* Responsive Design */
+/* Responsive design */
 @media (max-width: 768px) {
     .info {
         flex-direction: column;
@@ -102,11 +112,12 @@ footer {
     }
 
     .hero-img {
-        height: auto; /* Remove fixed height for responsiveness */
+        height: auto;
     }
 }
 
+/* Collapsed state for cards */
 .data-card.collapsed, .weather-card.collapsed {
-    max-height: 0;  /* Collapsed state */
+    max-height: 0;
     opacity: 0;
 }
