@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Zimbabwe Hiking Guide</title>
+    <meta name="description" content="Learn more about the Zimbabwe Hiking Guide, our mission, and our partners.">
+    <link rel="stylesheet" href="styles/about.css">
+    <script defer src="home.js"></script>
+    <script defer src="about.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Zimbabwe Hiking Guide Logo" loading="lazy">
+                <h1>Zimbabwe Hiking Guide</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="trails.html">Trails</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-intro">
+            <h2>Our Mission</h2>
+            <p>
+                At <strong>Zimbabwe Hiking Guide</strong>, our mission is to inspire outdoor enthusiasts by 
+                providing accurate, up-to-date, and accessible hiking information. We want to help hikers of all 
+                skill levels explore Zimbabwe's breathtaking landscapes while promoting safety, conservation, 
+                and community.
+            </p>
+        </section>
+
+        <section class="about-team">
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+                <article class="team-member">
+                    <img src="images/team1.jpg" alt="Portrait of founder" loading="lazy">
+                    <h3>Desmond Chibanda</h3>
+                    <p>Founder & Lead Content Curator</p>
+                </article>
+                <article class="team-member">
+                    <img src="images/team2.jpg" alt="Portrait of co-founder" loading="lazy">
+                    <h3>Nomsa Moyo</h3>
+                    <p>Trail Research & Community Manager</p>
+                </article>
+                <article class="team-member">
+                    <img src="images/team3.jpg" alt="Portrait of web developer" loading="lazy">
+                    <h3>Tendai Nyathi</h3>
+                    <p>Web Developer & Accessibility Advocate</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-partners">
+            <h2>Our Partners</h2>
+            <ul>
+                <li>Zimbabwe Parks & Wildlife Management Authority</li>
+                <li>National Conservation Trust</li>
+                <li>Zimbabwe Tourism Board</li>
+            </ul>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Zimbabwe Hiking Guide. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Dynamic Year
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Simple Form Handler
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for contacting us! We'll respond soon.");
+            this.reset();
+        });
+    </script>
+</body>
+</html>

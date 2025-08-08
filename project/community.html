@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - Hiking Zimbabwe</title>
+    <meta name="description" content="Join the Hiking Zimbabwe community to share your stories, photos, and connect with fellow hikers.">
+    <link rel="stylesheet" href="styles/community.css">
+</head>
+<body>
+    <header>
+        <h1>Hiking Zimbabwe</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="trails.html">Trails</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html" >About</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Welcome to Our Community</h2>
+            <p>Share your hiking experiences, post photos, and connect with fellow adventurers across Zimbabwe.</p>
+        </section>
+
+        <!-- Post Submission Form -->
+        <section aria-labelledby="post-form-heading">
+            <h2 id="post-form-heading">Share Your Story</h2>
+            <form id="postForm">
+                <label for="username">Your Name:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your name" required>
+
+                <label for="message">Your Story:</label>
+                <textarea id="message" name="message" placeholder="Share your hiking adventure..." required></textarea>
+
+                <label for="photo">Upload Photo (optional):</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+
+                <button type="submit">Post</button>
+            </form>
+        </section>
+
+        <!-- Display Community Posts -->
+        <section aria-labelledby="posts-heading">
+            <h2 id="posts-heading">Recent Posts</h2>
+            <div id="postsContainer" class="posts-container">
+                <!-- JavaScript will insert posts here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Hiking Zimbabwe. All rights reserved.</p>
+    </footer>
+
+    <script src="community.js" defer></script>
+</body>
+</html>

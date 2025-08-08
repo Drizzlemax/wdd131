@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Discover hiking trails across Zimbabwe – explore difficulty levels, distances, seasons, and safety tips." />
+  <title>Hiking Zimbabwe | Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles/home.css" />
+  <script defer src="home.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="home.html" class="logo">Hiking Zimbabwe</a>
+      <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <ul id="nav-links">
+        <li><a href="trails.html">Trails</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Explore Zimbabwe's Trails</h1>
+      <p>Discover the best hiking spots across Zimbabwe. From Matopos to Nyanga, find your next adventure!</p>
+      <a href="trails.html" class="btn">View Featured Trails</a>
+    </section>
+
+    <section class="quick-search">
+      <h2>Find Your Trail</h2>
+      <form id="trail-search-form" aria-label="Trail quick search form">
+        <label for="search">Search by name, region, or difficulty:</label>
+        <input type="text" id="search" name="search" placeholder="e.g., Nyanga, Easy" required />
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section class="featured-trails">
+      <h2>Featured Trails</h2>
+      <div id="featured-container">
+        <!-- Dynamically loaded from JavaScript -->
+      </div>
+    </section>
+
+    <section class="seasonal-highlights">
+      <h2>Seasonal Highlights</h2>
+      <div class="highlight-list">
+        <article class="highlight">
+          <img src="images/nyanga.jpg" alt="Hiker in Nyanga mountains" loading="lazy" />
+          <h3>Nyanga Mountains</h3>
+          <p>Best in spring for lush green views and clear skies.</p>
+        </article>
+        <article class="highlight">
+          <img src="images/matopos.jpg" alt="Matopos balancing rocks" loading="lazy" />
+          <h3>Matopos National Park</h3>
+          <p>Explore ancient rock formations during cooler dry seasons.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hiking Zimbabwe. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

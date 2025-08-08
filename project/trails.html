@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse hiking trails in Zimbabwe by difficulty, region, and distance." />
+  <title>Hiking Zimbabwe | Trails</title>
+  <link rel="stylesheet" href="styles/trails.css" />
+  <script defer src="home.js"></script>
+  <script defer src="trails.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="home.html" class="logo">Hiking Zimbabwe</a>
+      <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <ul id="nav-links">
+        <li><a href="home.html" >Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Explore Zimbabwe’s Trails</h1>
+      <p>Filter by difficulty and discover the perfect trail for your next adventure.</p>
+    </section>
+
+    <section class="filters">
+      <button class="filter-btn" data-difficulty="all">All</button>
+      <button class="filter-btn" data-difficulty="Easy">Easy</button>
+      <button class="filter-btn" data-difficulty="Moderate">Moderate</button>
+      <button class="filter-btn" data-difficulty="Challenging">Challenging</button>
+    </section>
+
+    <section id="trails-list" class="trails-container">
+      <!-- Trail cards dynamically loaded via trails.js -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hiking Zimbabwe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+        
