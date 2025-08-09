@@ -1,67 +1,48 @@
-/* community.css */
-:root {
-  --forest-green: #228b22;
-  --golden-savannah: #daa520;
-  --sky-blue: #87ceeb;
-  --stone-gray: #708090;
-  --rich-brown: #8b4513;
-  --off-white: #f8f8f8;
-  --text-dark: #2a2a2a;
-  --text-light: #ffffff;
+/* about.css */
+
+/* ===== GENERAL RESET & BASE STYLES ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-
-/* Header & Navigation */
 header {
-  background-color: var(--forest-green);
-  color: var(--text-light);
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    background: linear-gradient(90deg, #2d5d34, #3c7a43);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+header h1 {
+    margin: 0;
+    font-size: 2rem;
 }
 
-nav .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--text-light);
-  text-decoration: none;
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
 }
 
-#menu-toggle {
-  background: none;
-  border: none;
-  color: var(--text-light);
-  font-size: 2rem;
-  cursor: pointer;
-  display: none;
+nav ul li {
+    margin: 0 1rem;
 }
 
-#nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-#nav-links a {
-  text-decoration: none;
-  color: var(--text-light);
-  padding: 0.5rem;
-  transition: background-color 0.3s;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-#nav-links a:hover {
-  background-color: var(--golden-savannah);
-  color: var(--text-dark);
-  border-radius: 5px;
-}
 
 
 
@@ -188,4 +169,11 @@ footer {
     margin: 30px 0;
     font-size: 0.85rem;
     color: #666;
+}
+
+.team-grid img {
+    display: block;          /* ensures margin auto works */
+    margin: 0 auto;          /* centers horizontally */
+    max-width: 100%;         /* responsive scaling */
+    height: auto;            /* keeps aspect ratio */
 }

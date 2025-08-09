@@ -6,24 +6,26 @@
   <meta name="description" content="Safety tips, gear guide, weather info, and permits for hiking in Zimbabwe." />
   <title>Hiking Zimbabwe | Resources</title>
   <link rel="stylesheet" href="styles/resources.css" />
-  <script defer src="home.js"></script>
-  <script defer src="resources.js"></script>
+  <script defer src="scripts/home.js"></script>
+  <script defer src="scripts/resources.js"></script>
 </head>
 
 <body>
   <header>
-    <nav>
-      <a href="home.html" class="logo">Hiking Zimbabwe</a>
-      <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
-      <ul id="nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="trails.html" class="active">Trails</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.svg" alt="Zimbabwe Hiking Guide Logo" width="180" height="auto" loading="lazy">
+                <h1>Zimbabwe Hiking Guide</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="trails.html">Trails</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
 
   <main>
     <section class="page-header">
@@ -34,7 +36,7 @@
     <section class="accordion-section">
       <button class="accordion" aria-expanded="false">Safety Tips</button>
       <div class="accordion-content">
-        <img src="images/safety.jpg" alt="Hiker with safety gear" loading="lazy" />
+        <img src="images/whoatravel-08082025-0001.jpg" alt="Hiker with safety gear" width="450" height="550" loading="lazy" />
         <ul>
           <li>Check weather forecasts before heading out.</li>
           <li>Inform someone of your hiking route and expected return.</li>
@@ -46,7 +48,7 @@
 
       <button class="accordion" aria-expanded="false">Gear Guide</button>
       <div class="accordion-content">
-        <img src="images/gear.jpg" alt="Hiking gear on a wooden table" loading="lazy" />
+        <img src="images/survivalvrse-08082025-0001.jpg" alt="Hiking gear on a wooden table"width="600" height="700"  loading="lazy" />
         <ul>
           <li>Hiking boots or trail shoes with good grip.</li>
           <li>Lightweight, weather-appropriate clothing.</li>
@@ -58,7 +60,7 @@
 
       <button class="accordion" aria-expanded="false">Weather Info</button>
       <div class="accordion-content">
-        <img src="images/weather.jpg" alt="Clear skies over mountains" loading="lazy" />
+        <img src="images/tracks4africa-08082025-0001.jpg" alt="Clear skies over mountains" width="700" height="600" loading="lazy" />
         <p>Zimbabwe’s climate varies by region. Eastern Highlands are cooler and wetter, while lowveld areas can be hot and dry. Always check:</p>
         <ul>
           <li>Zimbabwe Meteorological Services for forecasts</li>
@@ -69,7 +71,7 @@
 
       <button class="accordion" aria-expanded="false">Permits & Fees</button>
       <div class="accordion-content">
-        <img src="images/permits.jpg" alt="Park entrance sign" loading="lazy" />
+        <img src="images/visitnyanga-08082025-0001.jpg" alt="Park entrance sign"width="400" height="500"  loading="lazy" />
         <p>Some trails require permits or entry fees:</p>
         <ul>
           <li>National Parks (e.g., Matopos, Nyanga): Entry fees vary by citizenship.</li>
@@ -80,8 +82,8 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Hiking Zimbabwe. All rights reserved.</p>
-  </footer>
+<footer>
+        <p>&copy; <span id="year"></span> Zimbabwe Hiking Guide. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

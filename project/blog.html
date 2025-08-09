@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Zimbabwe Hiking Guide</title>
+    <meta name="description" content="Read the latest hiking tips, trail guides, and adventure stories from Zimbabwe's premier hiking community.">
+    <meta name="keywords" content="Zimbabwe hiking, trail guides, hiking tips, outdoor adventures, hiking blog">
+    
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="Zimbabwe Hiking Guide Blog">
+    <meta property="og:description" content="Discover hiking tips, trail guides, and adventure stories from Zimbabwe's beautiful landscapes.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"  content="guide to hiking trails"> 
+   
+    
+    <link rel="stylesheet" href="styles/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.svg" alt="Zimbabwe Hiking Guide Logo" loading="lazy">
+                <h1>Zimbabwe Hiking Guide</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="trails.html">Trails</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="blog-hero">
+            <div class="hero-content">
+                <h2>Hiking Stories & Trail Wisdom</h2>
+                <p>Discover expert insights, trail guides, and inspiring stories from Zimbabwe's most beautiful hiking destinations.</p>
+            </div>
+            <div class="hero-image">
+                <img src="images/visitnyanga-08082025-0003.jpg" alt="Scenic view of Zimbabwe hiking trail" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Featured Post Section -->
+        <section class="featured-post">
+            <div class="featured-badge">
+                <span>Featured Post</span>
+            </div>
+            <article class="featured-article">
+                <div class="featured-image">
+                    <img src="images/mud_dust_overlanding-08082025-0003.jpg" alt="Sunrise over Eastern Highlands" loading="lazy">
+                    <div class="read-time">8 min read</div>
+                </div>
+                <div class="featured-content">
+                    <div class="post-meta">
+                        <span class="category">Trail Guide</span>
+                        <time datetime="2025-08-05">August 5, 2025</time>
+                        <span class="author">By Desmond Chibanda</span>
+                    </div>
+                    <h3><a href="#post-1">Conquering Mount Nyangani: A Complete Guide to Zimbabwe's Highest Peak</a></h3>
+                    <p>Everything you need to know about hiking Mount Nyangani, from preparation and permits to the best routes and safety considerations. This comprehensive guide covers weather patterns, wildlife encounters, and insider tips for a successful summit.</p>
+                    <a href="#post-1" class="read-more" aria-label="Read full article about Mount Nyangani">Continue Reading →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section class="blog-controls">
+            <div class="search-container">
+                <label for="blog-search" class="sr-only">Search blog posts</label>
+                <input type="search" id="blog-search" placeholder="Search posts..." aria-describedby="search-help">
+                <button type="button" class="search-button" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <div id="search-help" class="sr-only">Search through blog posts by title, content, or tags</div>
+            </div>
+            
+            <div class="filter-container">
+                <label for="category-filter">Filter by category:</label>
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="trail-guide">Trail Guides</option>
+                    <option value="hiking-tips">Hiking Tips</option>
+                    <option value="gear-review">Gear Reviews</option>
+                    <option value="safety">Safety</option>
+                    <option value="photography">Photography</option>
+                    <option value="wildlife">Wildlife</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-posts">
+            <div class="posts-grid">
+                <!-- Post 1 -->
+                <article class="post-card" data-category="hiking-tips" data-date="2025-08-03">
+                    <div class="post-image">
+                        <img src="images/safaricultureafrica-08082025-0001.jpg" alt="Hiker checking gear" loading="lazy">
+                        <div class="read-time">5 min read</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category">Hiking Tips</span>
+                            <time datetime="2025-08-03">August 3, 2025</time>
+                        </div>
+                        <h3><a href="#post-2">Essential Gear Checklist for Zimbabwe's Climate</a></h3>
+                        <p>Navigate Zimbabwe's diverse climate zones with confidence. From the hot lowlands to the cool highlands, here's what to pack for every hiking adventure.</p>
+                        <div class="post-tags">
+                            <span class="tag">gear</span>
+                            <span class="tag">preparation</span>
+                            <span class="tag">climate</span>
+                        </div>
+                        <a href="#post-2" class="read-more" aria-label="Read article about essential gear">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="post-card" data-category="trail-guide" data-date="2025-07-28">
+                    <div class="post-image">
+                        <img src="images/bosnian_girl_in_africa-08082025-0005.webp" alt="Matobo Hills landscape" loading="lazy">
+                        <div class="read-time">12 min read</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category">Trail Guide</span>
+                            <time datetime="2025-07-28">July 28, 2025</time>
+                        </div>
+                        <h3><a href="#post-3">Exploring Matobo Hills: Ancient Rocks and Sacred Sites</a></h3>
+                        <p>Discover the mystical beauty of Matobo Hills, where ancient granite formations meet rich cultural heritage. A guide to the best hiking routes and historical significance.</p>
+                        <div class="post-tags">
+                            <span class="tag">matobo</span>
+                            <span class="tag">culture</span>
+                            <span class="tag">history</span>
+                        </div>
+                        <a href="#post-3" class="read-more" aria-label="Read article about Matobo Hills">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="post-card" data-category="safety" data-date="2025-07-25">
+                    <div class="post-image">
+                        <img src="images/_thehungryhiker-08082025-0005.jpg" alt="First aid kit on trail" loading="lazy">
+                        <div class="read-time">7 min read</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category">Safety</span>
+                            <time datetime="2025-07-25">July 25, 2025</time>
+                        </div>
+                        <h3><a href="#post-4">Hiking Safety in Remote Areas: A Comprehensive Guide</a></h3>
+                        <p>Stay safe on remote trails with our essential safety protocols. Learn about emergency preparedness, communication, and risk assessment for solo and group hiking.</p>
+                        <div class="post-tags">
+                            <span class="tag">safety</span>
+                            <span class="tag">emergency</span>
+                            <span class="tag">solo-hiking</span>
+                        </div>
+                        <a href="#post-4" class="read-more" aria-label="Read article about hiking safety">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="post-card" data-category="wildlife" data-date="2025-07-20">
+                    <div class="post-image">
+                        <img src="images/safaricultureafrica-08082025-0004.jpg" alt="Wildlife on hiking trail" loading="lazy">
+                        <div class="read-time">6 min read</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category">Wildlife</span>
+                            <time datetime="2025-07-20">July 20, 2025</time>
+                        </div>
+                        <h3><a href="#post-5">Wildlife Encounters: Respecting Nature While Hiking</a></h3>
+                        <p>Learn how to safely observe and interact with Zimbabwe's diverse wildlife. From elephants to antelope, here's how to be a responsible hiker in wildlife areas.</p>
+                        <div class="post-tags">
+                            <span class="tag">wildlife</span>
+                            <span class="tag">conservation</span>
+                            <span class="tag">ethics</span>
+                        </div>
+                        <a href="#post-5" class="read-more" aria-label="Read article about wildlife encounters">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Post 5 -->
+                <article class="post-card" data-category="photography" data-date="2025-07-15">
+                    <div class="post-image">
+                        <img src="images/visitnyanga-08082025-0005.jpg" alt="Photography equipment on mountain" loading="lazy">
+                        <div class="read-time">10 min read</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category">Photography</span>
+                            <time datetime="2025-07-15">July 15, 2025</time>
+                        </div>
+                        <h3><a href="#post-6">Capturing Zimbabwe's Landscapes: Photography Tips for Hikers</a></h3>
+                        <p>Transform your hiking adventures into stunning visual stories. Learn composition techniques, lighting tips, and gear recommendations for outdoor photography.</p>
+                        <div class="post-tags">
+                            <span class="tag">photography</span>
+                            <span class="tag">landscapes</span>
+                            <span class="tag">tips</span>
+                        </div>
+                        <a href="#post-6" class="read-more" aria-label="Read article about hiking photography">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Post 6 -->
+                <article class="post-card" data-category="gear-review" data-date="2025-07-10">
+                    <div class="post-image">
+                        <img src="images/roadtrailrun-08082025-0001.jpg" alt="Hiking boots comparison" loading="lazy">
+                        <div class="read-time">9 min read</div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="category">Gear Review</span>
+                            <time datetime="2025-07-10">July 10, 2025</time>
+                        </div>
+                        <h3><a href="#post-7">Best Hiking Boots for African Terrain: 2025 Review</a></h3>
+                        <p>Find the perfect hiking boots for Zimbabwe's varied terrain. We've tested the top brands across rocky paths, muddy trails, and everything in between.</p>
+                        <div class="post-tags">
+                            <span class="tag">boots</span>
+                            <span class="tag">review</span>
+                            <span class="tag">gear</span>
+                        </div>
+                        <a href="#post-7" class="read-more" aria-label="Read hiking boots review">Read More →</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button type="button" class="load-more-btn">Load More Posts</button>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter-signup">
+            <div class="newsletter-content">
+                <h3>Stay Updated with Our Latest Adventures</h3>
+                <p>Get weekly hiking tips, new trail guides, and exclusive content delivered to your inbox.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <div class="form-group">
+                        <label for="newsletter-email" class="sr-only">Email address</label>
+                        <input type="email" id="newsletter-email" name="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    </div>
+                    <p class="privacy-note">We respect your privacy. Unsubscribe at any time.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Popular Tags -->
+        <section class="popular-tags">
+            <h3>Popular Topics</h3>
+            <div class="tags-cloud">
+                <a href="#" class="tag-link" data-category="trail-guide">Trail Guides</a>
+                <a href="#" class="tag-link" data-category="safety">Hiking Safety</a>
+                <a href="#" class="tag-link" data-category="gear">Gear Reviews</a>
+                <a href="#" class="tag-link" data-category="wildlife">Wildlife</a>
+                <a href="#" class="tag-link" data-category="photography">Photography</a>
+                <a href="#" class="tag-link" data-category="preparation">Preparation</a>
+                <a href="#" class="tag-link" data-category="conservation">Conservation</a>
+                <a href="#" class="tag-link" data-category="beginners">Beginners</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="trails.html">Trail Guides</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Our Adventures</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Follow us on Facebook">Facebook</a>
+                    <a href="#" aria-label="Follow us on Instagram">Instagram</a>
+                    <a href="#" aria-label="Follow us on Twitter">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@zimbabwehikingguide.com</p>
+                <p>Phone: +263 4 123 4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Zimbabwe Hiking Guide. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18,15 12,9 6,15"></polyline>
+        </svg>
+    </button>
+
+    <script src="scripts/blog.js"></script>
+</body>
+</html>

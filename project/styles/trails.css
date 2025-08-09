@@ -46,7 +46,7 @@
 }
 
 .filter-btn {
-  background-color: var(--forest-green);
+  background-color: #2d5d34;
   color: var(--text-light);
   border: none;
   padding: 0.6rem 1rem;
@@ -71,57 +71,40 @@
 }
 
 
-/* Header & Navigation */
 header {
-  background-color: var(--forest-green);
-  color: var(--text-light);
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    background: linear-gradient(90deg, #2d5d34, #3c7a43);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+header h1 {
+    margin: 0;
+    font-size: 2rem;
 }
 
-nav .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--text-light);
-  text-decoration: none;
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
 }
 
-#menu-toggle {
-  background: none;
-  border: none;
-  color: var(--text-light);
-  font-size: 2rem;
-  cursor: pointer;
-  display: none;
+nav ul li {
+    margin: 0 1rem;
 }
 
-#nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-#nav-links a {
-  text-decoration: none;
-  color: var(--text-light);
-  padding: 0.5rem;
-  transition: background-color 0.3s;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-#nav-links a:hover {
-  background-color: var(--golden-savannah);
-  color: var(--text-dark);
-  border-radius: 5px;
-}
+
 
 /* Trail Card */
 .trail-card {
@@ -165,12 +148,11 @@ nav .logo {
 }
 
 
-
 /* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: var(--forest-green);
+  background: linear-gradient(90deg, #2d5d34, #3c7a43);
   color: var(--text-light);
 }
 

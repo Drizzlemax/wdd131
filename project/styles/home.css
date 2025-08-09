@@ -30,7 +30,7 @@ body {
 
 /* Header & Navigation */
 header {
-  background-color: var(--forest-green);
+  background: linear-gradient(90deg, #2d5d34, #3c7a43);
   color: var(--text-light);
   padding: 1rem 2rem;
   position: sticky;
@@ -80,11 +80,6 @@ nav .logo {
   border-radius: 5px;
 }
 
-
-.active {
-    color: #080808; /* Highlight active link */
-     text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow;
-}
 
 /* Hero Section */
 .hero {
@@ -192,7 +187,7 @@ nav .logo {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: var(--forest-green);
+  background: linear-gradient(90deg, #2d5d34, #3c7a43);
   color: var(--text-light);
 }
 

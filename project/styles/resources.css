@@ -17,35 +17,38 @@ body {
 }
 
 header {
-    background-color: #2a5d34; /* Deep forest green */
-    color: white;
+    background: linear-gradient(90deg, #2d5d34, #3c7a43);
+    color: #fff;
     padding: 1rem 0;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2rem;
     margin: 0;
+    font-size: 2rem;
 }
 
-nav {
+nav ul {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    background-color: #1f4025;
-    padding: 0.75rem 0;
+    list-style: none;
+    padding: 0;
 }
 
-nav a {
-    color: white;
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover,
-nav a:focus {
+nav ul li a:hover {
     text-decoration: underline;
 }
+
 
 
 
@@ -87,6 +90,16 @@ a:focus {
     outline: 2px solid #f9b234; /* Gold highlight for focus */
     outline-offset: 3px;
 }
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2d5d34;
+    color: #fff;
+    margin-top: 2rem;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

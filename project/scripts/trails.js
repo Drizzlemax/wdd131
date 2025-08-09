@@ -6,7 +6,7 @@ const allTrails = [
     distance: "4 km",
     region: "Eastern Highlands",
     season: "Spring",
-    image: "images/nyanga.jpg",
+    image: "images/4x4ventures_sa-08082025-0010.jpg",
     description: "Gentle slopes with lush green views and clear skies."
   },
   {
@@ -15,7 +15,7 @@ const allTrails = [
     distance: "8 km",
     region: "Matopos National Park",
     season: "Dry Season",
-    image: "images/matopos.jpg",
+    image: "images/bosnian_girl_in_africa-08082025-0002.webp",
     description: "Unique balancing rock formations and cultural sites."
   },
   {
@@ -24,7 +24,7 @@ const allTrails = [
     distance: "15 km",
     region: "Chimanimani",
     season: "Winter",
-    image: "images/chimanimani.jpg",
+    image: "images/_pamushana_-09082025-0001.jpg",
     description: "Steep climb with breathtaking mountain views."
   },
   {
@@ -33,7 +33,7 @@ const allTrails = [
     distance: "3 km",
     region: "Eastern Highlands",
     season: "Summer",
-    image: "images/vumba.jpg",
+    image: "images/putjepathfinder-09082025-0001.jpg",
     description: "A short scenic route through botanical gardens."
   }
 ];
