@@ -177,3 +177,33 @@ footer {
     max-width: 100%;         /* responsive scaling */
     height: auto;            /* keeps aspect ratio */
 }
+
+
+.social-links {
+    display: flex;
+    gap: 16px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.social-links img {
+    filter: invert(1); /* Makes icons white */
+    transition: filter 0.3s ease;
+}
+
+.social-links a:hover img {
+    filter: invert(1) sepia(1) hue-rotate(90deg); /* Green tint on hover */
+}
