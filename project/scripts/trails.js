@@ -24,7 +24,7 @@ const allTrails = [
     distance: "15 km",
     region: "Chimanimani",
     season: "Winter",
-    image: "images/_pamushana_-09082025-0001.jpg",
+    image: "images/iconicmoments.travel-09082025-0001.jpg",
     description: "Steep climb with breathtaking mountain views."
   },
   {
